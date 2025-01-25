@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  clock_app:
+    # create image from Dockerfile in ./apps/clock_app
+    build:
+      context: ./apps/clock_app
+    ports:
+      - "5001:80"
+  
+  button_app:
+    # create image from Dockerfile in ./apps/button_app
+    build:
+      context: ./apps/button_app
+    ports:
+      - "5002:80"
+    # environment variables of the sevice
+    environment:
+      CLOCK_APP_URL: "http://clock_app"
+
+# for containers speaking with each other
+networks:
+  default:
+    name: clock_action_network

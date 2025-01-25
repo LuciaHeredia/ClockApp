@@ -1,4 +1,23 @@
 # Clock App
+## Structure:
+```
+project_folder/
+├── web/
+│   ├── clock_app/
+│   │   ├── clock_app.py
+│   │   ├── Dockerfile
+│   │   ├── requirements.txt
+│   │   ├── templates/
+│   │       └── ...
+│   └── button_app/ 
+│       ├── button_app.py
+│       ├── Dockerfile
+│       ├── requirements.txt
+│       ├── templates/
+│           └── ...
+└── docker-compose.yml 
+```
+
 ## App Missions: 
 -	Displays the current time. 
 -	Exposes an API endpoint (/update_time) to decrement the time. 

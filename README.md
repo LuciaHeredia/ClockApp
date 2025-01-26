@@ -1,13 +1,16 @@
+# Clock App:
+![]("screenshots/clock_app.gif")
+
 ## Clock App Missions: 
 ### Clock App (clock_app): 
 -	It displays the current time. 
 -	Exposes an **API endpoint** to decrement the time.
-<img src = "screenshots/LUCIA HEREDIA.png">
+<img src = "screenshots/clock_app.png">
 
 ### Button App (button_app):
 -	Contains a button to decrement the time. 
 -	Communicates with the **clock_app** by making a POST request to the **API endpoint**.
-<img src = "screenshots/LUCIA HEREDIA.png">
+<img src = "screenshots/button_app.png"> <img src = "screenshots/button_app_2.png">
 
 ## Structure:
 ```

@@ -1,16 +1,16 @@
-# Clock App:
-![]("screenshots/clock_app.gif")
+# Flask Clock App with Docker:
+<img src="screenshots/clock_app.gif" width="500"/>
 
-## Clock App Missions: 
+## Missions: 
 ### Clock App (clock_app): 
 -	It displays the current time. 
--	Exposes an **API endpoint** to decrement the time.
-<img src = "screenshots/clock_app.png">
+-	Exposes an **API endpoint** to decrement the time. \
+    <img src = "screenshots/clock_app.png" width="380">
 
 ### Button App (button_app):
 -	Contains a button to decrement the time. 
--	Communicates with the **clock_app** by making a POST request to the **API endpoint**.
-<img src = "screenshots/button_app.png"> <img src = "screenshots/button_app_2.png">
+-	Communicates with the **clock_app** by making a POST request to the **API endpoint**. \
+    <img src = "screenshots/button_app.png" width="350"> <img src = "screenshots/button_app_2.png" width="400">
 
 ## Structure:
 ```

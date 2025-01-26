@@ -16,7 +16,8 @@ services:
       - "5002:80"
     # environment variables of the sevice
     environment:
-      CLOCK_APP_URL: "http://clock_app"
+      # public access to clock_app
+      CLOCK_APP_URL: "http://172.22.0.3:8000"
 
 # for containers speaking with each other
 networks:

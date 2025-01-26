@@ -3,8 +3,8 @@ import requests
 import os
 
 app = Flask(__name__)
-# api clock_app endpoint url
-clock_app_url = os.getenv("CLOCK_APP_URL", "http://clock_app")
+# api clock_app endpoint url (.2/.3 at end)
+clock_app_url = os.getenv("CLOCK_APP_URL", "http://172.22.0.2:8000")
 
 @app.route('/')
 def index():
